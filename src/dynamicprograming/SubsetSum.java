@@ -63,8 +63,8 @@ public class SubsetSum {
 
     public static void main(String[] args) {
 
-        int[] A = new int[] {3, 34, 4, 12, 5, 2};
-        int B = 30;
+        int[] A = new int[] {1,2,3,4,5};
+        int B = 7;
 
         System.out.println( existSubsetSum(A, B));
 

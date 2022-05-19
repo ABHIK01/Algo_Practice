@@ -30,7 +30,7 @@ class Solution {
                 visited[i] = 0;
                 smallList.remove(smallList.size()-1);
            }
-            } else if( arr[i] == arr[i-1] &&  visited[i-1] ==1){
+            } else if( arr[i] == arr[i-1] &&  visited[i-1] ==0){
                 continue;
             } else {
                  if(  visited[i] == 0  ) {

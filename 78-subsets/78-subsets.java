@@ -20,16 +20,12 @@ class Solution {
           //exclude
         backtrack(nums,result,index+1,smallList);
         
-        //
+        //include
         smallList.add(nums[index]);
          backtrack(nums,result,index+1,smallList);
-        smallList.remove(smallList.size()-1);
+        smallList.remove(smallList.size()-1); //backtrcak 
         
-      
-        
-        
-        
-        
-        
+    
     }
 }
+

@@ -1,5 +1,6 @@
 class Solution {
     public int minDistance(String word1, String word2) {
+        //as we need to find the uncommon word,so we can find the common word from //two strings (using LCS longest common substring ) and delete rest of the characters
         int row = word1.length();
         int column = word2.length();
         int[][] dp = new int[row+1][column+1];

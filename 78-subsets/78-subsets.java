@@ -14,11 +14,14 @@ class Solution {
             return;
         }
         
+        //exclude
         backtrack( nums,result, start+1, smallList);
         
+        
+        //include
         smallList.add(nums[start]);
          backtrack( nums,result, start+1, smallList);
-        smallList.remove(smallList.size() -1);
+        smallList.remove(smallList.size() -1); //backtrack
         
         
         

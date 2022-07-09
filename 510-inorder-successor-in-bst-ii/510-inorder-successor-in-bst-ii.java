@@ -7,7 +7,8 @@ class Node {
     public Node parent;
 };
 */
-
+//T.C=O(H)
+//S.C=O(1)
 class Solution {
     public Node inorderSuccessor(Node node) {
         if(node.right != null) {

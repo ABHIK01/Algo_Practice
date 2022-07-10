@@ -25,7 +25,6 @@ class Solution {
         
         while(queue.size() > 0) {
             Pair<TreeNode,Integer> first = queue.peek();
-
             Integer levelSize = queue.size();
              Pair<TreeNode, Integer> elem = null;
             for(int i = 0;i<levelSize;i++) {

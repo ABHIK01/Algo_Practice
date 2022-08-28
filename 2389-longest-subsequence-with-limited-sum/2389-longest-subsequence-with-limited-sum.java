@@ -13,11 +13,12 @@ class Solution {
                 sum += nums[j];
                 count++;
                 if(sum<= queries[i]){
-                    ans[i] = count;
+                    ans[index] = count;
                     
                 }
                 
             }
+            index++;
         }
         
         

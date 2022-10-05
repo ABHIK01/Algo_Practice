@@ -1,5 +1,6 @@
 class Solution {
     public int minCost(String colors, int[] neededTime) {
+        /*
         int runningSum = 0;
         //int count = 0;
         int minNeededTime = 0;
@@ -11,5 +12,20 @@ class Solution {
         }
         
         return minNeededTime;
+        */
+        int totalTime = 0;
+        int i = 0,j = 0;
+        while(i < neededTime.length && j < neededTime.length ){
+            int currentTotal = 0,currentMax = 0;
+            while(j < neededTime.length &&  colors.charAt(i) == colors.charAt(j)) {
+                currentTotal += neededTime[j];
+                currentMax = Math.max(currentMax,neededTime[j]);
+                j++;
+            }
+            totalTime  += currentTotal - currentMax;
+            i = j;
+        }
+        
+        return totalTime;
     }
 }

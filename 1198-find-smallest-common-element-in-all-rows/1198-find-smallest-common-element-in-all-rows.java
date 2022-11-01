@@ -3,6 +3,9 @@ class Solution {
         HashMap<Integer,Integer> map = new HashMap<>();
         int row = mat.length;
         int column = mat[0].length;
+        if(row == 1) {
+            return mat[0][0];
+        }
         for(int i = 0;i<row;i++){
             for(int j = 0;j<column;j++){
                 int val = mat[i][j];
